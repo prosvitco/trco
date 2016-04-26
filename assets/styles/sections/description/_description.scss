@@ -1,0 +1,32 @@
+/**
+ * ========================================
+ * DESCRIPTION
+ * ========================================
+ */
+
+.about-section {
+	padding: 90px 0;
+	.about-row {
+		margin-top: 50px;
+
+		.about-image {
+			text-align: center;
+
+			@media (max-width: $screen-md-max) {
+				margin-bottom: 15px;
+
+			}
+
+			@media (min-width: $screen-md-min) {
+				padding-right: 40px;
+			}
+		}
+
+		.about-image.col-md-push-6 {
+			@media (min-width: $screen-md-min) {
+				padding-left: 40px;
+				padding-right: 15px;
+			}
+		}
+	}
+}

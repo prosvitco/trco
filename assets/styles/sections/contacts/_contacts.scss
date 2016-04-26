@@ -1,0 +1,49 @@
+.contact-maps-section {
+
+	.section-background-maps {
+		z-index: 1;
+	}
+
+	.contact-maps-box {
+		position: relative;
+		z-index: 2;
+		padding: 20px 40px;
+		background-color: $white;
+		background-color: rgba(255,255,255,0.9);
+		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+		@media (max-width: $screen-md-max) {
+			-webkit-box-shadow: none;
+			box-shadow: none;
+			margin-top: 30px;
+		}
+
+		.map-container2 {
+			h2 {
+				font-size: 26px;
+				font-family: $font;
+			}
+
+			hr {
+				width: 120px;
+				border: 2px solid #333;
+				margin: 25px 0;
+				opacity: 0.2;
+			}
+		}
+
+		.un-cl .col-sm-6 p {
+			margin-bottom: 0px;
+		}
+	}
+
+	.section-background {
+		@media (max-width: $screen-md-max) {
+			position: relative;
+			padding-top: 62.5%;
+			margin-top: -90px;
+			overflow: hidden;	
+		}
+	}
+}

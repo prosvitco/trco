@@ -3,11 +3,32 @@ if (post_password_required()) {
   return;
 }
 ?>
+<?php 
+add_filter('comment_form_fields', 'kama_reorder_comment_fields' );
+function kama_reorder_comment_fields( $fields ){
+  // die(print_r( $fields )); // посмотрим какие поля есть
 
+  $new_fields = array(); // сюда соберем поля в новом порядке
+
+  $myorder = array('author','email','url','comment'); // нужный порядок
+
+  foreach( $myorder as $key ){
+    $new_fields[ $key ] = $fields[ $key ];
+    unset( $fields[ $key ] );
+  }
+
+  // если остались еще какие-то поля добавим их в конец
+  if( $fields )
+    foreach( $fields as $key => $val )
+      $new_fields[ $key ] = $val;
+
+  return $new_fields;
+}
+?>
 <section id="comments" class="comments">
   <?php if (have_comments()) : ?>
-    <h2><?php printf(_nx('One response to &ldquo;%2$s&rdquo;', '%1$s responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'sage'), number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>'); ?></h2>
-
+    <h4><?php printf(_nx('One response to &ldquo;%2$s&rdquo;', '%1$s responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'sage'), number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>'); ?></h4>
+      <hr class="comm-hr">
     <ol class="comment-list">
       <?php wp_list_comments(['style' => 'ol', 'short_ping' => true]); ?>
     </ol>

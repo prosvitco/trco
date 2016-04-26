@@ -1,0 +1,65 @@
+/**
+ * ========================================
+ * HOW IT WORKS
+ * ========================================
+ */
+.how-it-works-section {
+	padding-bottom: 0;
+}
+
+.hiw-row {
+	margin-top: 50px;
+
+	.hiw-item.even {
+		background-color: #f6f6f6;
+
+		.hiw-item-icon {
+			border: 5px solid #f6f6f6;
+		}
+	}
+
+	.hiw-item {
+		margin-left: -15px;
+		margin-right: -15px;
+		background-color: #fff;
+		margin-bottom: -99999px;
+		padding-bottom: 99999px;
+
+		.hiw-item-picture {
+			width: 100% !important;
+			height: 100% !important;
+		}
+
+		.hiw-item-text {
+			position: relative;
+			padding: 50px 40px;
+			text-align: center;
+
+			.hiw-item-icon {
+				background-color: $brand-primary;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin: -35px 0 0 -35px;
+				display: block;
+				width: 70px;
+				height: 70px;
+				border: 5px solid #fff;
+				border-radius: 50%;
+				color: #fff;
+				font-family: "Montserrat", sans-serif;
+				font-size: 36px;
+				font-weight: bold;
+				line-height: 60px;
+				text-align: center;
+			}
+
+			.hiw-item-title {
+				font-family: "Montserrat", sans-serif;
+				font-size: 14px;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

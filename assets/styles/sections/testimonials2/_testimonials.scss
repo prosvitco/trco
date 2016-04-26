@@ -1,0 +1,59 @@
+/**
+ * ========================================
+ * TESTIMONIAL
+ * ========================================
+ */
+.testimonial-section {
+
+	.row-image {
+		padding: 40px 0;
+		text-align: center;
+
+		img {
+			padding: 0 20px;
+		}
+	}
+
+
+	.testimonial {
+		padding: 30px;
+		margin: 15px 0;
+		background-color: $white;
+
+
+		.testimonial-quote {
+			margin-bottom: 40px;
+			padding: 0;
+			border: none;
+			font-size: 17px;
+			font-style: italic;
+		}
+
+		.testimonial-ratings {
+			color: $brand-primary;
+			font-size: 20px;
+			margin-right: 10px;
+		}
+
+		.testimonial-cite {
+			position: relative;
+			font-style: normal;
+			font-size: 13px;
+			padding-left: 30px;
+			opacity: 0.6;
+			white-space: nowrap;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 20px;
+				height: 1px;
+				border-top: 1px solid;
+				border-color: inherit;
+				opacity: 0.4;
+			}
+		}
+	}
+}

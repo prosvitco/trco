@@ -1,0 +1,46 @@
+.footer-section {
+	padding-bottom: 30px;
+	text-align: center;
+
+	.footer-logo {
+		margin-top: 0;
+		margin-bottom: 60px;
+	}
+}
+
+.footer-socmed {
+	font-size: 20px;
+	line-height: 1;
+	margin-bottom: 15px;
+
+	li {
+		display: inline;
+		margin-left: 5px;
+		margin-right: 5px;
+
+		a {
+			color: $light-gray;
+
+			&:hover, &:focus {
+				color: $brand-primary;
+			}
+		}
+	}
+
+	#menu-social {
+		padding-left: 0px;
+	}
+}
+
+.footer-copyright {
+	opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+

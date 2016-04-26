@@ -1,0 +1,317 @@
+.title-area {
+    margin: 50px 0;
+
+    @media ( max-width: $screen-xs-max) {
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 36px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+
+    .large-post-meta {
+        margin-bottom: 20px;
+
+        .avatar a {
+            color: $blue;
+        }
+
+        .avatar ~ span > a {
+            color: $black;
+        }
+    }
+
+    .post-sharing {
+        .fb-button {
+            background-color: #3B5998;
+            border-color: #3B5998;
+        }
+
+        .tw-button {
+            background-color: #00B6F1;
+            border-color: #00B6F1;
+        }
+
+        .gp-button {
+            background-color: #DA5333;
+            border-color: #DA5333;
+        }
+    }
+}
+
+.post-desc {
+    margin-top: 30px;
+}
+
+/*
+.bgw, { //Section without sidebar
+    text-align: center;
+
+    .theme {
+
+        .theme-post {
+            background-color: $theme-post;
+            border-radius: 3px;
+            color: #FFF;
+            padding: 1px 5px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+            font-size: 12px;
+        }
+    }
+
+    .entry-title {
+        line-height: 1.4;
+        font-style: $font;
+        margin-bottom: 25px;
+
+
+        @media (max-width: $screen-xs-max) {
+            text-align: center;
+            line-height: 1.3;
+            font-size: 32px;
+        }
+
+        @media (min-width: $screen-sm-min) {
+            font-size: 40px;
+            line-height: 1.3;
+        }
+
+        @media (min-width: $screen-md-min) {
+            font-size: 40px;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            font-size: 42px;
+        }
+
+        a {
+            color: $blog-title;
+            font-weight: 500;
+
+            img {
+                margin: 0px auto;
+            }
+        }
+    }
+
+    .entry-summary {
+        margin-top: 45px;
+        margin-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #222;
+
+        p {
+
+            @media (max-width: $screen-xs-max) {
+                text-align: center;
+                letter-spacing: 0.2px;
+                font-size: 16px;
+            }
+
+            @media (min-width: $screen-sm-min) {
+                font-size: 16px;
+                letter-spacing: 0.4px;
+            }
+
+            @media (min-width: $screen-md-min) {
+                font-size: 17px;
+                letter-spacing: 0.4px;
+            }
+
+            @media (min-width: $screen-lg-min) {
+                letter-spacing: 0.2px;
+                font-size: 17px;
+            }
+        }
+    }
+
+    .button {
+        margin-bottom: 40px;
+
+        .read-more {
+            font-size: 12px;
+            font-weight: 100;
+        }
+    }
+}
+
+.post-review {
+    .post-title {
+        h3 {
+            line-height: 1.3;
+            font-size: 20px;
+
+            a {
+                color: $black;
+            }
+        }
+    }
+
+    .pagination-wrapper {
+        text-align: center;
+    }
+}
+*/
+
+
+
+
+
+.bga, .content { //Section with sidebar
+
+    .theme {
+
+        .theme-post {
+            background-color: $theme-post;
+            border-radius: 3px;
+            color: #FFF;
+            padding: 1px 5px;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+            font-size: 12px;
+        }
+    }
+
+    .entry-title {
+        line-height: 1.4;
+        font-family: $font;
+        margin-bottom: 25px;
+
+
+        @media (max-width: $screen-xs-max) {
+            text-align: center;
+            line-height: 1.3;
+            font-size: 32px;
+        }
+
+        @media (min-width: $screen-sm-min) {
+            font-size: 40px;
+            line-height: 1.3;
+        }
+
+        @media (min-width: $screen-md-min) {
+            font-size: 40px;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            font-size: 42px;
+        }
+
+        a {
+            color: $blog-title;
+            font-weight: 500;
+
+            img {
+                margin: 0px auto;
+            }
+        }
+    }
+
+    .entry-summary {
+        margin-top: 45px;
+        margin-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #222;
+
+        p {
+
+            @media (max-width: $screen-xs-max) {
+                text-align: center;
+                letter-spacing: 0.2px;
+                font-size: 16px;
+            }
+
+            @media (min-width: $screen-sm-min) {
+                font-size: 16px;
+                letter-spacing: 0.4px;
+            }
+
+            @media (min-width: $screen-md-min) {
+                font-size: 17px;
+                letter-spacing: 0.4px;
+            }
+
+            @media (min-width: $screen-lg-min) {
+                letter-spacing: 0.2px;
+                font-size: 17px;
+            }
+        }
+    }
+
+    .button {
+        margin-bottom: 40px;
+        margin-left: 30px;
+
+        .read-more {
+            font-size: 12px;
+            font-weight: 100;
+        }
+    }
+}
+
+.post-review {
+    .post-title {
+        h3 {
+            line-height: 1.3;
+            font-size: 20px;
+
+            a {
+                color: $black;
+            }
+        }
+    }
+
+    .pagination-wrapper {
+        text-align: left;
+    }
+}
+
+
+.pagination > li > a {
+    color: #FFF;
+    background-color: $brand-primary;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding: 11px;
+    margin: 0px 2px;
+
+    &:hover {
+        color: #CACACA;
+        background-color: $primary-hover;
+    }
+}
+
+.post-meta {
+   @media (max-width: $screen-xs-max) {
+    font-size: 16px;
+}
+
+@media (min-width: $screen-sm-min) {
+    font-size: 18px;
+}
+
+@media (min-width: $screen-md-min) {
+    font-size: 19px;
+}
+
+@media (min-width: $screen-lg-min) {
+    font-size: 20px;
+}
+}
+
+
+
+
+.container.wrap .content.row .main > article {
+
+    .entry-content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

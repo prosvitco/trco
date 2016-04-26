@@ -11,4 +11,11 @@
   <?php get_template_part('templates/content', 'search'); ?>
 <?php endwhile; ?>
 
-<?php the_posts_navigation(); ?>
+<?php// the_posts_navigation(); ?>
+<?php 
+if (function_exists("wp_bs_pagination"))
+    {
+         //wp_bs_pagination($the_query->max_num_pages);
+         wp_bs_pagination();
+}
+?> 

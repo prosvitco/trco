@@ -1,0 +1,63 @@
+/**
+ * ========================================
+ * TEAM
+ * ========================================
+ */
+.team-section {
+	padding-bottom: 0;
+
+	.team-row {
+		margin-top: 50px;
+
+		.team-member.even {
+			background-color: #F6F6F6;
+		}
+	}
+}
+
+.team-member {
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-bottom: -99999px;
+	padding-bottom: 99999px;
+	background-color: #FFF;
+
+	.team-member-picture {
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	.team-member-text {
+		padding: 30px 30px 60px;
+
+		.team-member-name {
+			margin: 0 0 5px;
+			font-family: "Montserrat", sans-serif;
+			font-size: 14px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+		}
+
+		.team-member-position {
+			opacity: 0.6;
+			font-size: 0.9em;
+		}
+
+		.team-member-description {
+			position: relative;
+			margin-top: 20px;
+			padding-top: 20px;
+
+			&:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: block;
+				height: 2px;
+				width: 40px;
+				background-color: rgba(0,0,0,0.1);
+			}
+		}
+	}
+}

@@ -1,0 +1,105 @@
+/**
+ * ========================================
+ * PORTFOLIO
+ * ========================================
+ */
+.portfolio-section {
+	padding-bottom: 0;
+}
+
+.portfolio-row {
+	margin-top: 50px;
+
+	.portfolio-item {
+		position: relative;
+		margin-left: -15px;
+		margin-right: -15px;
+		background-color: #fff;
+		cursor: pointer;
+		overflow: hidden;
+
+		&:hover, .portfolio-item-overlay {
+			opacity: 0.8;
+		}
+
+		&:hover, .portfolio-item-text {
+			background-color: $primary-hover;
+			-webkit-transform: translate(0,0);
+			transform: translate(0,0);
+		}
+
+		.portfolio-item-picture {
+			width: 100% !important;
+			height: 100% !important;
+			-webkit-transition: all ease 1.5s;
+			transition: all ease 1.5s;
+
+			&:hover, .portfolio-item-picture {
+				-webkit-transform: scale(1.1,1.1);
+				transform: scale(1.1,1.1);
+			}
+		}
+
+		.portfolio-item-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			-webkit-transition: all ease 0.25s;
+			transition: all ease 0.25s;
+		}
+
+		.portfolio-item-text {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			padding: 30px;
+			background-color: #222;
+			color: #ccc;
+			-webkit-transition: all ease 0.25s;
+			transition: all ease 0.25s;
+			-webkit-transform: translate(0,100%);
+			transform: translate(0,100%);
+
+			.portfolio-item-title {
+				margin: 0 0 15px;
+				color: #fff;
+				font-family: "Montserrat", sans-serif;
+				font-size: 14px;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.portfolio-item:hover .portfolio-item-picture {
+	-webkit-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+}
+
+.section-accent .portfolio-item-overlay {
+	background-color: #222;
+}
+.portfolio-item:hover .portfolio-item-overlay {
+	opacity: 0.8;
+	background-color: $brand-primary!important;
+}
+
+.section-accent .portfolio-item-text,
+.section-dark .portfolio-item-text {
+	background-color: #fff;
+	color: #444;
+}
+.portfolio-item:hover .portfolio-item-text {
+	-webkit-transform: translate(0,0);
+	transform: translate(0,0);
+}
+
+.section-accent .portfolio-item-title,
+.section-dark .portfolio-item-title {
+	color: #222;
+}
